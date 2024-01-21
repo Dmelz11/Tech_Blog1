@@ -1,10 +1,11 @@
+//dependencies
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
-// const cors = require('cors');
+
 
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -36,14 +37,11 @@ app.set("view engine", "handlebars");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "public")));
-// app.use(cors());
 
 app.use(routes);
 
 // sync sequelize with database
-// sequelize.sync({ force: false }).then(() => {
-//   app.listen(PORT, () => console.log('Now listening'));
-// });
+
 app.listen(PORT, () => {
   console.log("App running on port 3001")
 sequelize.sync({force : false})});
