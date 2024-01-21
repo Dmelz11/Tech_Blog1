@@ -24,7 +24,9 @@ and install the node modules and a .env file. Then it would be ready to run in i
 
 ## Credits
 
-This challenge is very similar to the group project #2 that I just completed with my Teammates Savannah Williams and Tasneem Halim, and although I didn't receive any direct colaboration on this challange I feel it is appropriate to mention that I learned some pertinent skills that apply directly to this challenge from my work with Savannah and Tasneem.
+This challenge is very similar to the group project #2 that I just completed with my Team mates Savannah Williams and Tasneem Halim, and although I didn't receive any direct colaboration on this challange I feel it is appropriate to mention that I learned some pertinent skills that apply directly to this challenge from my work with Savannah and Tasneem.
+That being said, during the project I had my hand in the entire application, except the css, which I've done now in this application.
+I resourced the class documentation and recordings as needed for examples.
 
 ## License
 
