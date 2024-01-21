@@ -4,7 +4,7 @@ const sequelize = require('../config/connection');
 const { Post, Comment, User } = require("../../models");
 const withAuth = require("../utils/auth");
 
-// READ all posts
+// READ all posts in dashboard only if logged in
 router.get("/",withAuth, async (req, res) => {
   try {
     const postData = await Comment.findAll({
@@ -23,6 +23,7 @@ router.get("/",withAuth, async (req, res) => {
          attributes:["username"]},
        ],
     });
+    //serialization
     const posts =postData.map((post)=>
 post.get({plain:true}));
 res.render("dashboard",{
@@ -35,8 +36,10 @@ res.render("dashboard",{
     res.status(500).json(err);
   }
 });
+//routing to edit an existing post
 router.get("/edit/:id",withAuth, async (req, res) => {
     try {
+        
       const postData = await Comment.findOne({
           where: {user_id: req.session.user_id},
           attributes: ['id', 'title','body'],
@@ -54,7 +57,7 @@ router.get("/edit/:id",withAuth, async (req, res) => {
          ],
       });
       if(!postData){
-        res.status(404).json(err);
+        res.status(404).json({message:"Unable to locate post with this id"});
         return;
       }
       postDataNew = postData.get({plain: true});
