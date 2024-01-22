@@ -13,7 +13,7 @@ router.get("/",withAuth, async (req, res) => {
       include: [
         {
           model: Comment,
-          attributes: ["id","comment_text","user_id"],
+          attributes: ["id","comment_body","user_id"],
 
        include: {
          model: User, 
@@ -46,7 +46,7 @@ router.get("/edit/:id",withAuth, async (req, res) => {
         include: [
           {
             model: Comment,
-            attributes: ["id","comment_text","user_id"],
+            attributes: ["id","comment_body","user_id"],
   
          include: {
            model: User, 
