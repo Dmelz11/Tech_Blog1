@@ -7,9 +7,13 @@ const editPost = async (event) => {
 // get text and trim whitespace
 const comment_body = document.getElementById("#editBtn").value.trim();
 
-console.log(blogPost);
+console.log(post);
 
-document.location.assign(`/createpost/${blogPost[2]}`);
+document.location.assign(`/createpost/${post[2]}`);
 };
 
 const editButton = document.querySelectorAll("#editBtn");
+
+for (let i = 0; i < editButton.length; i++) {
+    editButton[i].addEventListener("click", editPost);
+  };
