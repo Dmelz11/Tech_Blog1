@@ -1,1 +1,15 @@
 
+[
+    {
+        "name": "JavaScript for Dummies",
+        "description": "An introduction to JavaScript"
+    },
+    {
+        "name": "Cracking the Coding Interview",
+        "description": "189 Programming Questions and Solutions"
+    },
+    {
+        "name": "101 Ways to write a simple blog app",  
+        "description": "One persons opinion on the simple blog app" 
+    }
+]
