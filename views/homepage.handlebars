@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row homepage-main">
+    {{#each posts as |post|}}
+      <div class="subrow mb-4 project card text-dark shadow">
+        <div class="card-header">
+          <h3>
+            <a href="/post/{{post.id}}">{{post.name}}</a>
+          </h3>
+          <p>Created on
+            {{format_date post.date_created}}</p>
+        </div>
+        <div class="card-body">
+          <p>{{post.name}} - {{post.description}}</p>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
+<!-- Render script for logged in users only -->
+{{#if logged_in}}
+<script src="/js/logout.js"></script>
+{{/if}}
