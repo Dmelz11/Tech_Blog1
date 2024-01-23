@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Club Blog Main Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar is-fixed-top">
+    <a class="navbar-item ml-4" href="/">Home</a>
+    <a class="navbar-item ml-4" href="/login">Login</a>
+    <a class="navbar-item ml-4" href="/dashboard">Dashboard</a>
+    <a class="navbar-item ml-4" href="/createpost">Create Post</a>
+    <a class="navbar-item ml-4" href="/readpost">Read Post</a>
+    <a class="navbar-item ml-4" id="logout" href="/">Logout</a>
+  </nav>
+  <section class="hero is-primary p-2">
+    <main class="container container-fluid mt-5">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+  </section>
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
