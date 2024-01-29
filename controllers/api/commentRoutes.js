@@ -1,6 +1,6 @@
 // imports
 const router = require("express").Router();
-const { Comment } = require("../../models");
+const { Post, Comment, User } = require("../../models");
 
 // CREATE Comment
 router.post("/", async (req, res) => {
@@ -25,7 +25,7 @@ router.get("/", async (req, res) => {
         include: [
           {
             model: User,
-            attributes: ["id:","username"],
+            attributes: ["name"],
           },
           {
             model: Post,
