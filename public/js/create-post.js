@@ -20,14 +20,14 @@ async function createPostHandler(event) {
   
       //checking if good
       if (response.ok) {
-        localStorage.setItem("post", JSON.stringify({postTitle: title, postBody: body}));
-        var post = JSON.parse(localStorage.getItem("post"));
+        localStorage.setItem("blog-post", JSON.stringify({postTitle: title, postBody: body}));
+        var blogPost = JSON.parse(localStorage.getItem("blog-post"));
         console.log("Test");
  
         renderMessage();
         
       } else {
-        alert(response.statusText); // find better way to do this
+        alert(response.statusText);
     }
   }
 }
@@ -38,7 +38,7 @@ document
 
 
 function renderMessage() {
-  var lastpost = JSON.parse(localStorage.getItem("post"));
+  var lastpost = JSON.parse(localStorage.getItem("blog-post"));
   console.log(lastpost);
   if (lastpost !== null) {
     document.location.replace("/dashboard");
