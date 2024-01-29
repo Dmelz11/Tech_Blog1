@@ -7,7 +7,7 @@ const withAuth = require("../utils/auth");
 // READ all posts in dashboard only if logged in
 router.get("/", withAuth, async (req, res) => {
   try {
-    const postData = await Comment.findAll({
+    const blogPostData = await Comment.findAll({
       where: { user_id: req.session.user_id },
       attributes: ["id", "title", "body"],
       include: [
@@ -24,11 +24,11 @@ router.get("/", withAuth, async (req, res) => {
       ],
     });
     //serialization
-    const posts = postData.map((post) => post.get({ plain: true }));
+    const blogPosts = blogPostData.map((post) => post.get({ plain: true }));
     res.render("dashboard", {
       loggedIn: req.session.loggedIn,
       loggedInUserData: req.session.loggedInUserData,
-      posts: posts,
+      posts: blogPosts,
     });
   } catch (err) {
     console.error(err);
@@ -38,7 +38,7 @@ router.get("/", withAuth, async (req, res) => {
 //routing to edit an existing post
 router.get("/edit/:id", withAuth, async (req, res) => {
   try {
-    const postData = await Comment.findOne({
+    const blogPostData = await Comment.findOne({
       where: { user_id: req.session.user_id },
       attributes: ["id", "title", "body"],
       include: [
@@ -54,11 +54,11 @@ router.get("/edit/:id", withAuth, async (req, res) => {
         { model: User, attributes: ["username"] },
       ],
     });
-    if (!postData) {
+    if (!blogPostData) {
       res.status(404).json({ message: "Unable to locate post with this id" });
       return;
     }
-    postDataNew = postData.get({ plain: true });
+    blogPostData = blogPostData.get({ plain: true });
     res.render("edit-post", {
       loggedIn: true,
     });
