@@ -19,3 +19,13 @@
           </div>
           <input type="text" class="form-control" placeholder="password" aria-label="Password"
             aria-describedby="inputGroup-sizing-default">
+            </div>
+        <button type="button" id="loginBtn" class="btn is-primary is-medium is-block">Sign up !</button>
+        <a href="/login" class="card-link">Log in instead</a>
+      </div>
+    </div>
+  </main>
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
