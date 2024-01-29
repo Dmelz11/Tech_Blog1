@@ -1,9 +1,9 @@
 :root {
-  --primary: #d9e262;
-  --secondary: #9caea9;
-  --tertiary: #0b0bd2;
-  --light-dark: #6f6866;
-  --dark: #38302e;
+  --primary: #12543b;
+  --secondary: #f0d421;
+  --tertiary: #f7c523;
+  --light-dark: #e1cf0d;
+  --dark: #e1e80a;
   --border-radius: 0.3rem;
 }
 
@@ -41,7 +41,7 @@ h2, h4, h5,
 h6 {
   font-weight: 700;
   margin: 0;
-  color: var(--dark);
+  color: rgb(11, 111, 46);
   line-height: 1.25;
 }
 
@@ -72,7 +72,7 @@ main {
 }
 
 a {
-  color: #1c0cad;
+  color: #f4bb2a;
   text-decoration: none;
 }
 p {
@@ -83,7 +83,7 @@ p {
   display: inline-flex;
   width: 100%;
   position: relative;
-  background-color: #da8c0d;
+  background-color: #fabb0c;
 }
 .container{
   width: 100%;
@@ -97,11 +97,11 @@ p {
   width: auto;
 }
 .btn {
-  background-color: #da8c0d;
+  background-color: #85da0d;
 }
 .card-body {
   /* padding: 0.375rem; */
-  max-height: 90%;
+  max-height: 80%;
   max-width: 100%;
 }
 .card-header{
