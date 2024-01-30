@@ -12,11 +12,7 @@ This repo is for an CMS style blog-site using an MVC paradigm that incorporates,
 - [Credits](#credits)
 - [License](#license)
 - [Links](#links)
-- [Screenshot]
--
-- (#screenshot<img width="1152" alt="Screenshot 2024-01-30 at 1 36 08 PM" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/b68f146d-0379-42c3-8285-56bc3935af3d">
-<img width="1152" alt="Screenshot 2024-01-30 at 1 36 00 PM-4" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/cf7bbfc0-71a6-4346-ae59-fc4dc73827f2">
-
+- [Screenshot](#screenshot)
 
 ## Installation
 
@@ -46,6 +42,8 @@ Heroku: https://pacific-meadow-56826-b7e2ef779dcd.herokuapp.com/post/3
 ## Screenshot
 
 
+<img width="1152" alt="Screenshot 2024-01-30 at 1 36 08 PM" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/b68f146d-0379-42c3-8285-56bc3935af3d">
+<img width="1152" alt="Screenshot 2024-01-30 at 1 36 00 PM-4" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/cf7bbfc0-71a6-4346-ae59-fc4dc73827f2">
 
 
 
