@@ -12,9 +12,11 @@ This repo is for an CMS style blog-site using an MVC paradigm that incorporates,
 - [Credits](#credits)
 - [License](#license)
 - [Links](#links)
-- [Screenshot](#scree<img width="1152" alt="Screenshot 2024-01-30 at 1 36 00 PM-4" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/cf7bbfc0-71a6-4346-ae59-fc4dc73827f2">
-<img width="1152" alt="Screenshot 2024-01-30 at 1 36 00 PM-3" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/76f0c5f7-972d-4e61-8935-4443f655053e">
-nshot)
+- [Screenshot]
+-
+- (#screenshot<img width="1152" alt="Screenshot 2024-01-30 at 1 36 08 PM" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/b68f146d-0379-42c3-8285-56bc3935af3d">
+<img width="1152" alt="Screenshot 2024-01-30 at 1 36 00 PM-4" src="https://github.com/Dmelz11/Tech_Blog1/assets/143745882/cf7bbfc0-71a6-4346-ae59-fc4dc73827f2">
+
 
 ## Installation
 
