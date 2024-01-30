@@ -40,5 +40,7 @@ Github: https://github.com/Dmelz11/Tech_Blog1
 Heroku: https://pacific-meadow-56826-b7e2ef779dcd.herokuapp.com/post/3
 
 ## Screenshot
- ![The Tech Blog Dashboard](https://github.com/Dmelz11/Tech_Blog1/main/Screenshot2024-01-30 at 1.36.08 PM.png?raw=true)
- ![The Tech Blog Login Page ](https://github.com/Dmelz11/Tech_Blog1Screenshot2024-01-30 at 1.36.00 PM-4.png?raw=true)
+![Tech Blog Login](<Screenshot 2024-01-30 at 1.36.00 PM-4-1.png>) 
+
+![Tech Blog Dashboard](<Screenshot 2024-01-30 at 1.36.08 PM-1.png>)
+ 
